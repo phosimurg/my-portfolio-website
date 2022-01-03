@@ -12,6 +12,14 @@
 
 .App {
 
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
   .welcome-container {
     min-height: 100vh;
     background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
@@ -21,5 +29,213 @@
     background-size: 400% 400%;
     height: fit-content;
 
+    .head-img-container {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .head-img {
+
+        width: 300px;
+        margin-top: 8rem !important;
+        border-radius: 100%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-width: 10px;
+        box-shadow: -50px -20px 40px rgba(227, 135, 255, 0.25),
+        0px 50px 40px rgba(255, 219, 57, 0.3),
+        50px -20px 40px rgba(118, 255, 255, 0.3),
+        0 0 2pt 4pt rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    .head-title-container {
+
+      margin: 30px auto auto auto;
+      text-align: center;
+
+      .head-title {
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 700;
+      }
+
+      .head-subtitle {
+        color: #ffffff;
+        font-weight: 500;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .about-container {
+    min-height: 100vh;
+    background-color: #03001e;
+
+    .nice-word-sec {
+      text-align: center;
+      padding-top: 70px;
+
+      .nice-word-title {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 60px;
+      }
+
+      .nice-word-subtitle {
+        margin-top: 60px;
+        font-size: 40px;
+        background-color: #f3ec78;
+        background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 9s ease infinite;
+        height: fit-content;
+        font-weight: 700;
+      }
+    }
+
+    .about-sec {
+      margin-top: 100px;
+      text-align: center;
+
+      .about-title {
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 700;
+      }
+
+      .about-text {
+        font-size: 25px;
+        color: #ffffff;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .skills-container {
+    min-height: 100vh;
+    background-color: #0d0740;
+    position: relative;
+
+    .card-sec {
+      margin: auto;
+      padding: 70px;
+      display: flex;
+      justify-content: space-between;
+
+      .frontend-card {
+
+      }
+
+      .backend-card {
+        margin-top: 130px;
+        margin-left: 9px;
+      }
+
+      .software-card {
+        margin-top: 230px;
+        margin-left: 9px;
+      }
+
+      .other-card {
+        margin-top: 330px;
+        margin-left: 9px;
+      }
+
+    }
+
+    .emoji-sec {
+      position: absolute;
+      left: 20px;
+      bottom: 0;
+
+      .emoji-img{
+        max-width: 550px;
+        max-height: 550px;
+      }
+    }
+  }
+
+  .contact-container {
+    min-height: 100vh;
+    background-color: #26243A;
+    text-align: center;
+
+    .contact-title {
+      font-size: 60px;
+      font-weight: 300;
+      padding-top: 90px;
+      color: #ffffff;
+    }
+
+    .contact-title-second {
+      padding-top: 20px;
+      font-size: 60px;
+      background-color: #f3ec78;
+      background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient 9s ease infinite;
+      height: fit-content;
+      font-weight: 800;
+    }
+
+    .social-links {
+      padding-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 500px;
+
+      .soc-icon{
+        transition: 0.3s;
+        color: #ffffff;
+
+        &:hover{
+          transition: 0.2s;
+        }
+      }
+
+
+      .insta-link {
+
+        .ins-ico{
+          &:hover{
+            color: #f0512e;
+          }
+        }
+
+      }
+
+      .in-link {
+
+        .in-ico{
+          &:hover{
+            color: #0B65C2;
+          }
+        }
+
+      }
+
+      .git-link {
+
+        .git-ico{
+          &:hover{
+            color: black;
+          }
+        }
+      }
+    }
+
+    .email-sec {
+      padding-top: 50px;
+      font-size: 40px;
+      color: #ffffff;
+      font-weight: 200;
+    }
   }
 }
