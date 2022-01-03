@@ -18,20 +18,69 @@
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    position: relative;
+
+    .toggler-btn {
+      box-shadow: none;
+      right: -50px!important;
+      position: absolute!important;
+    }
+
+    .toggler-ico {
+      border: none;
+      background-color: transparent;
+
+      .burger-ico {
+
+        color: #ffffff;
+        width: 24px;
+        height: 24px;
+
+      }
+    }
 
     .navbar-title {
       color: #ffffff;
       font-size: 2.4vw;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 5vw;
+        margin-left: -45px;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 5vw;
+        margin-left: -45px;
+      }
     }
 
     .navbar-item-container {
       max-width: 40%;
+      @media (min-width: 320px) and (max-width: 480px) {
+        max-width: 100%;
+        margin-left: -60px;
+
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        max-width: 100%;
+        margin-left: -60px;
+      }
 
       .navbar-list {
         display: flex;
         list-style: none;
         padding: 0;
         margin: 0;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          display: block;
+
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          display: block;
+        }
 
         .navbar-list-item {
 
@@ -40,6 +89,14 @@
             font-weight: normal;
             color: #ffffff !important;
             text-decoration: none;
+
+            @media (min-width: 320px) and (max-width: 480px) {
+              font-size: 6vw;
+            }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+              font-size: 6vw;
+            }
           }
         }
       }
@@ -47,6 +104,13 @@
     }
 
     .work-request-area {
+      @media (min-width: 320px) and (max-width: 480px) {
+        display: none;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        display: none;
+      }
 
       .work-request-link {
         text-decoration: none;

@@ -65,6 +65,14 @@
         0px 50px 40px rgba(255, 219, 57, 0.3),
         50px -20px 40px rgba(118, 255, 255, 0.3),
         0 0 2pt 4pt rgba(255, 255, 255, 0.6);
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          width: 50vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          width: 50vw;
+        }
       }
     }
 
@@ -77,6 +85,14 @@
         color: #ffffff;
         font-size: 4vw;
         font-weight: 700;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+         font-size: 8vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 8vw;
+        }
       }
 
       .head-subtitle {
@@ -84,6 +100,14 @@
         font-size: 2vw;
         font-weight: 500;
         opacity: 0.7;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 4vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 4vw;
+        }
       }
     }
 
@@ -102,6 +126,14 @@
       -webkit-backdrop-filter: blur(7px);
       border: 1px solid rgba(255, 255, 255, 0.18);
       animation: float 3s ease-in-out infinite;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        display: none;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        display: none;
+      }
     }
 
     .first-info {
@@ -135,11 +167,26 @@
     .nice-word-sec {
       text-align: center;
       padding-top: 70px;
+      @media (min-width: 320px) and (max-width: 480px) {
+       padding-top: 20px;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        padding-top: 20px;
+      }
 
       .nice-word-title {
         color: #ffffff;
         font-weight: 700;
         font-size: 4vw;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 8vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 8vw;
+        }
       }
 
       .nice-word-subtitle {
@@ -153,12 +200,28 @@
         animation: gradient 9s ease infinite;
         height: fit-content;
         font-weight: 700;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 5vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 5vw;
+        }
       }
     }
 
     .about-sec {
       margin-top: 100px;
       text-align: center;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin-top: 50px;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 50px;
+      }
 
       .about-title {
         color: #ffffff;
@@ -170,6 +233,14 @@
         font-size: 25px;
         color: #ffffff;
         font-weight: 300;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 5vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 5vw;
+        }
       }
     }
   }
@@ -185,23 +256,69 @@
       display: flex;
       justify-content: space-between;
 
+      @media (min-width: 320px) and (max-width: 480px) {
+       padding: 10px;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        padding: 10px;
+      }
+
       .frontend-card {
 
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-top: 10px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          margin-top: 30px;
+        }
       }
 
       .backend-card {
         margin-top: 11vw;
         margin-left: 9px;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-top: 43vw;
+          margin-left: -50vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          margin-top: 43vw;
+          margin-left: -50vw;
+        }
       }
 
       .software-card {
         margin-top: 21vw;
         margin-left: 9px;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-top: 86vw;
+          margin-left: -90vw;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          margin-top: 86vw;
+          margin-left: -90vw;
+        }
       }
 
       .other-card {
         margin-top: 31vw;
         margin-left: 9px;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-top: 138vw;
+          margin-left: -50vw;
+          margin-bottom: 30px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          margin-top: 103vw;
+          margin-left: -50vw;
+        }
       }
 
     }
@@ -215,6 +332,15 @@
         width: 45vw;
         height: 30vw;
       }
+
+      @media (min-width: 320px) and (max-width: 480px) {
+       display: none;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        display: none;
+      }
+
     }
 
     .skill-title{
@@ -224,6 +350,14 @@
       color: #ffffff;
       font-size: 5vw;
       font-weight: 800;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        display: none;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        display: none;
+      }
     }
   }
 
@@ -240,6 +374,14 @@
       font-weight: 300;
       padding-top: 30px;
       color: #ffffff;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 10vw;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 10vw;
+      }
     }
 
     .contact-title-second {
@@ -253,6 +395,14 @@
       animation: gradient 9s ease infinite;
       height: fit-content;
       font-weight: 800;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 10vw;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 10vw;
+      }
     }
 
     .social-links {
@@ -265,6 +415,18 @@
       .soc-icon {
         transition: 0.3s;
         color: #ffffff;
+        width: 60px;
+        height: 60px;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+          width: 40px;
+          height: 40px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+          width: 40px;
+          height: 40px;
+        }
 
         &:hover {
           transition: 0.2s;
@@ -307,6 +469,14 @@
       font-size: 40px;
       color: #ffffff;
       font-weight: 200;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 29px;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 29px;
+      }
     }
   }
 

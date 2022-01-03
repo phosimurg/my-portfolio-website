@@ -67,21 +67,21 @@ function App() {
             <div className={"skills-container container-fluid"} id={'skills'}>
                 <div className={"card-sec container"}>
 
-                    <div className={"frontend-card"}>
+                    <div className={"frontend-card col"}>
                         <DescCard title={'Frontend'} subtitle={'Html, Css, Sass, Bootstrap, Js, React.js'}/>
                     </div>
 
-                    <div className={"backend-card"}>
+                    <div className={"backend-card col"}>
                         <DescCard title={'Backend'} titleColor={'yellow'}
                                   subtitle={'Php, Laravel, Mysql, MsSql, Asp.Net, Next.js'}/>
                     </div>
 
-                    <div className={"software-card"}>
+                    <div className={"software-card col"}>
                         <DescCard title={'Software Development'} titleColor={'blue'}
                                   subtitle={'C#, Selenium, Unity3D, .Net'}/>
                     </div>
 
-                    <div className={"other-card"}>
+                    <div className={"other-card col"}>
                         <DescCard title={'Other'} titleColor={'green'}
                                   subtitle={'Project Management, Mobile Developing, Adobe Tools(PS, XD, AI, AN), Microsoft Tools, Jira etc.'}/>
                     </div>
@@ -102,14 +102,12 @@ function App() {
                     <h1 className={"contact-title"}>Wanna know more? </h1>
                     <h1 className={"contact-title-second"}>Visit my Social Links</h1>
                     <div className={"social-links container"}>
-                        <a href="https://www.instagram.com/phosimurg/" className="insta-link"><FaInstagram size={100}
-                                                                                                           className={'soc-icon ins-ico'}
-                        /></a>
+                        <a href="https://www.instagram.com/phosimurg/" className="insta-link"><FaInstagram
+                            className={'soc-icon ins-ico'}/></a>
                         <a href="https://www.linkedin.com/in/ahmet-yildiz-ab5824183/" className="in-link"><FaLinkedinIn
-                            className={'soc-icon in-ico'}
-                            size={100}/></a>
-                        <a href="https://github.com/phosimurg" className="git-link"><FaGithub size={100}
-                                                                                              className={'soc-icon git-ico'}/></a>
+                            className={'soc-icon in-ico'}/></a>
+                        <a href="https://github.com/phosimurg" className="git-link"><FaGithub
+                            className={'soc-icon git-ico'}/></a>
 
                     </div>
                     <div className={"email-sec"}>
