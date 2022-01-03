@@ -10,6 +10,21 @@
   }
 }
 
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.11);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.041);
+    transform: translatey(-10px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.137);
+    transform: translatey(0px);
+  }
+}
+
 .App {
 
   .header-container {
@@ -28,6 +43,10 @@
     padding: 0;
     background-size: 400% 400%;
     height: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .head-img-container {
       margin: auto;
@@ -36,8 +55,7 @@
       justify-content: center;
 
       .head-img {
-
-        width: 300px;
+        width: 22vw;
         margin-top: 8rem !important;
         border-radius: 100%;
         -moz-border-radius: 50%;
@@ -57,21 +75,62 @@
 
       .head-title {
         color: #ffffff;
-        font-size: 60px;
+        font-size: 4vw;
         font-weight: 700;
       }
 
       .head-subtitle {
         color: #ffffff;
+        font-size: 2vw;
         font-weight: 500;
         opacity: 0.7;
       }
+    }
+
+    .info-cards {
+      position: absolute;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 300px;
+      color: #212529;
+      font-weight: 400;
+
+      font-size: 25px;
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.123);
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .first-info {
+      left: 30vw;
+      top: 20vw;
+      text-align: center;
+    }
+
+    .second-info {
+      right: 30vw;
+      top:30vw;
+    }
+
+    .third-info {
+      right: 35vw;
+      top: 10vw;
     }
   }
 
   .about-container {
     min-height: 100vh;
     background-color: #03001e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .about-in{
+
+    }
 
     .nice-word-sec {
       text-align: center;
@@ -80,12 +139,12 @@
       .nice-word-title {
         color: #ffffff;
         font-weight: 700;
-        font-size: 60px;
+        font-size: 4vw;
       }
 
       .nice-word-subtitle {
         margin-top: 60px;
-        font-size: 40px;
+        font-size: 2vw;
         background-color: #f3ec78;
         background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
         background-size: 400% 400%;
@@ -131,17 +190,17 @@
       }
 
       .backend-card {
-        margin-top: 130px;
+        margin-top: 11vw;
         margin-left: 9px;
       }
 
       .software-card {
-        margin-top: 230px;
+        margin-top: 21vw;
         margin-left: 9px;
       }
 
       .other-card {
-        margin-top: 330px;
+        margin-top: 31vw;
         margin-left: 9px;
       }
 
@@ -152,10 +211,19 @@
       left: 20px;
       bottom: 0;
 
-      .emoji-img{
-        max-width: 550px;
-        max-height: 550px;
+      .emoji-img {
+        width: 45vw;
+        height: 30vw;
       }
+    }
+
+    .skill-title{
+      position: absolute;
+      right: 15vw;
+      top: 10vw;
+      color: #ffffff;
+      font-size: 5vw;
+      font-weight: 800;
     }
   }
 
@@ -163,17 +231,20 @@
     min-height: 100vh;
     background-color: #26243A;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .contact-title {
-      font-size: 60px;
+      font-size: 5vw;
       font-weight: 300;
-      padding-top: 90px;
+      padding-top: 30px;
       color: #ffffff;
     }
 
     .contact-title-second {
       padding-top: 20px;
-      font-size: 60px;
+      font-size: 5vw;
       background-color: #f3ec78;
       background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
       background-size: 400% 400%;
@@ -191,11 +262,11 @@
       align-items: center;
       max-width: 500px;
 
-      .soc-icon{
+      .soc-icon {
         transition: 0.3s;
         color: #ffffff;
 
-        &:hover{
+        &:hover {
           transition: 0.2s;
         }
       }
@@ -203,8 +274,8 @@
 
       .insta-link {
 
-        .ins-ico{
-          &:hover{
+        .ins-ico {
+          &:hover {
             color: #f0512e;
           }
         }
@@ -213,8 +284,8 @@
 
       .in-link {
 
-        .in-ico{
-          &:hover{
+        .in-ico {
+          &:hover {
             color: #0B65C2;
           }
         }
@@ -223,8 +294,8 @@
 
       .git-link {
 
-        .git-ico{
-          &:hover{
+        .git-ico {
+          &:hover {
             color: black;
           }
         }
@@ -237,5 +308,14 @@
       color: #ffffff;
       font-weight: 200;
     }
+  }
+
+  .footer-container {
+    text-align: center;
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+
   }
 }

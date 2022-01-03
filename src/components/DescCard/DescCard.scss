@@ -8,7 +8,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.7rem 1.5rem;
 
-  .my-card-title {
+  .my-card-title-purple {
     font-size: 29px;
     background-color: #f3ec78;
     background: linear-gradient(
@@ -20,6 +20,36 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: fit-content;
+  }
+
+  .my-card-title-yellow {
+    font-size: 29px;
+    background-color: #f3ec78;
+    background: linear-gradient(
+                    120deg,
+                    #ff5acd,
+                    #fbda61
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: fit-content;
+  }
+
+  .my-card-title-blue {
+    font-size: 29px;
+    background: linear-gradient(45deg, #a6ffcb, #1fa2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: fit-content;
+  }
+
+  .my-card-title-green {
+    font-size: 29px;
+    background: linear-gradient(120deg, #9be15d, #00e3ae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: fit-content;
+
   }
 
   .my-card-subtitle {

@@ -10,38 +10,61 @@ function App() {
     return (
         <div className="App">
 
-            <div className={"welcome-container"}>
+            {/*Welcome Area*/}
+            <div className={"welcome-container"} id={'welcome'}>
 
                 <div className={"header-container"}>
                     <Header/>
                 </div>
 
-                <div className={"head-img-container container-fluid"}>
-                    <img src="/assets/my-photo.jpeg" className={"img-fluid head-img"} alt="my-photo"/>
+                <div className={"info-cards first-info"}>
+                    👋 <br/> Hi! I am <br/> <b> Ahmet</b>
                 </div>
-                <div className={"head-title-container"}>
-                    <h1 className={"head-title"}>Software Developer</h1>
-                    <h4 className={"head-subtitle"}>Based in Istanbul, Turkey</h4>
+
+                <div className={"info-cards second-info"}>
+                    Hobby {'  '}📸<br/>Photographer
+                </div>
+
+                <div className={"info-cards third-info"}>
+                    Gamer!🎮
+                </div>
+
+                <div className={'welcome-in'}>
+                    <div className={"head-img-container container-fluid"}>
+                        <img src="/assets/my-photo.jpeg" className={"img-fluid head-img"} alt="my-photo"/>
+                    </div>
+                    <div className={"head-title-container"}>
+                        <h1 className={"head-title"}>Software Developer</h1>
+                        <h4 className={"head-subtitle"}>Based in Istanbul, Turkey</h4>
+                    </div>
                 </div>
 
             </div>
-            <div className={"about-container container-fluid"}>
-                <div className={"nice-word-sec container"}>
-                    <h1 className={"nice-word-title"}>People don't realize that the whole life of one person can be
-                        changed with one book.</h1>
-                    <h4 className={"nice-word-subtitle"}>- Malcom X</h4>
-                </div>
 
-                <div className={"about-sec container"}>
-                    <h3 className={"about-title"}>About 👨‍💻</h3>
-                    <p className={"about-text"}>The biggest reason I became a software developer was my passion for
-                        computers when I was a kid. <br/> Continually improving with this passion, I work to be the best
-                        in
-                        what I do. Besides my job, in my private life I like video games, travel and swimming.</p>
+            {/*About Area*/}
+            <div className={"about-container container-fluid"} id={'about'}>
+                <div className={"about-in"}>
+                    <div className={"nice-word-sec container"}>
+                        <h1 className={"nice-word-title"}>People don't realize that the whole life of one person can be
+                            changed with one book.</h1>
+                        <h4 className={"nice-word-subtitle"}>- Malcom X</h4>
+                    </div>
+
+                    <div className={"about-sec container"}>
+                        <h3 className={"about-title"}>About 👨‍💻</h3>
+                        <p className={"about-text"}>The biggest reason I became a software developer was my passion for
+                            computers when I was a kid. <br/> Continually improving with this passion, I work to be the
+                            best
+                            in
+                            what I do. Besides my job, in my private life I like video games, books, travel and
+                            swimming.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div className={"skills-container container-fluid"}>
+            {/*Skills Area*/}
+            <div className={"skills-container container-fluid"} id={'skills'}>
                 <div className={"card-sec container"}>
 
                     <div className={"frontend-card"}>
@@ -49,15 +72,17 @@ function App() {
                     </div>
 
                     <div className={"backend-card"}>
-                        <DescCard title={'Backend'} subtitle={'Php, Laravel, Mysql, MsSql, Asp.Net, Next.js'}/>
+                        <DescCard title={'Backend'} titleColor={'yellow'}
+                                  subtitle={'Php, Laravel, Mysql, MsSql, Asp.Net, Next.js'}/>
                     </div>
 
                     <div className={"software-card"}>
-                        <DescCard title={'Software Development'} subtitle={'C#, Selenium, Unity3D, .Net'}/>
+                        <DescCard title={'Software Development'} titleColor={'blue'}
+                                  subtitle={'C#, Selenium, Unity3D, .Net'}/>
                     </div>
 
                     <div className={"other-card"}>
-                        <DescCard title={'Other'}
+                        <DescCard title={'Other'} titleColor={'green'}
                                   subtitle={'Project Management, Mobile Developing, Adobe Tools(PS, XD, AI, AN), Microsoft Tools, Jira etc.'}/>
                     </div>
 
@@ -65,25 +90,37 @@ function App() {
                 <div className={"emoji-sec"}>
                     <img className={"emoji-img img-fluid"} src={Soft} alt="soft"/>
                 </div>
+
+                <div className={"skill-title"}>
+                    Skills 💪
+                </div>
             </div>
 
-            <div className={"contact-container container-fluid"}>
-                <h1 className={"contact-title"}>Wanna know more? </h1>
-                <h1 className={"contact-title-second"}>Visit my Social Links</h1>
-                <div className={"social-links container"}>
-                    <a href="https://www.instagram.com/phosimurg/" className="insta-link"><FaInstagram size={100}
-                                                                                                       className={'soc-icon ins-ico'}
-                    /></a>
-                    <a href="https://www.linkedin.com/in/ahmet-yildiz-ab5824183/" className="in-link"><FaLinkedinIn
-                        className={'soc-icon in-ico'}
-                        size={100}/></a>
-                    <a href="https://github.com/phosimurg" className="git-link"><FaGithub size={100}
-                                                                                          className={'soc-icon git-ico'}/></a>
+            {/*Contact Area*/}
+            <div className={"contact-container container-fluid"} id={'contact'}>
+                <div className={'contact-in'}>
+                    <h1 className={"contact-title"}>Wanna know more? </h1>
+                    <h1 className={"contact-title-second"}>Visit my Social Links</h1>
+                    <div className={"social-links container"}>
+                        <a href="https://www.instagram.com/phosimurg/" className="insta-link"><FaInstagram size={100}
+                                                                                                           className={'soc-icon ins-ico'}
+                        /></a>
+                        <a href="https://www.linkedin.com/in/ahmet-yildiz-ab5824183/" className="in-link"><FaLinkedinIn
+                            className={'soc-icon in-ico'}
+                            size={100}/></a>
+                        <a href="https://github.com/phosimurg" className="git-link"><FaGithub size={100}
+                                                                                              className={'soc-icon git-ico'}/></a>
 
+                    </div>
+                    <div className={"email-sec"}>
+                        phosimurg@gmail.com
+                    </div>
                 </div>
-                <div className={"email-sec"}>
-                    phosimurg@gmail.com
-                </div>
+            </div>
+
+            {/*Footer Area*/}
+            <div className={"footer-container"}>
+                ©2022 Ahmet YILDIZ
             </div>
         </div>
     );

@@ -16,19 +16,19 @@ const Header = () => {
             <div className="collapse navbar-collapse navbar-item-container" id="navbarNav">
                 <ul className=" navbar-list">
                     <li className="nav-item navbar-list-item">
-                        <a className="nav-link navbar-link" href="#">About</a>
+                        <a className="nav-link navbar-link" href="#about">About</a>
                     </li>
                     <li className="nav-item navbar-list-item">
-                        <a className="nav-link navbar-link" href="#">Skills</a>
+                        <a className="nav-link navbar-link" href="#skills">Skills</a>
                     </li>
                     <li className="nav-item navbar-list-item">
-                        <a className="nav-link navbar-link" href="#">Contact</a>
+                        <a className="nav-link navbar-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
 
             <div className={"work-request-area"}>
-                <a className={"work-request-link"} href="">Work Request</a> <span
+                <a className={"work-request-link"} href="#contact">Work Request</a> <span
                 className={"right-arrow"}><FaAngleRight color={'#ffffff'}/></span>
             </div>
         </div>
