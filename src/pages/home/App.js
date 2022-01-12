@@ -31,7 +31,7 @@ function App() {
 
                 <div className={'welcome-in'}>
                     <div className={"head-img-container container-fluid"}>
-                        <img src="/assets/my-photo.jpeg" className={"img-fluid head-img"} alt="my-photo"/>
+                        <img src="/assets/my-photo-new-second.jpg" className={"img-fluid head-img"} alt="my-photo"/>
                     </div>
                     <div className={"head-title-container"}>
                         <h1 className={"head-title"}>Software Developer</h1>
@@ -111,9 +111,16 @@ function App() {
 
                     </div>
                     <div className={"email-sec"}>
-                        phosimurg@gmail.com
+                        <a href="mailto:phosimurg@gmail.com">phosimurg@gmail.com</a>
                     </div>
                 </div>
+            </div>
+
+            <div className={"work-request-container"} id={"workRequest"}>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdmN2ggVzgnscikb-KB_s-wViKnT51YnNPTQPx6ZJw9VXgs2g/viewform?embedded=true"
+                    className={"iFrameSec"} frameBorder="0" marginHeight="0" marginWidth="0">Yükleniyor…
+                </iframe>
             </div>
 
             {/*Footer Area*/}

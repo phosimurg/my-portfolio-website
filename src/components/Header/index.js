@@ -36,7 +36,7 @@ const Header = () => {
             </div>
 
             <div className={"work-request-area"}>
-                <a className={"work-request-link"} href="#contact">Work Request</a> <span
+                <a className={"work-request-link"} href="#workRequest">Work Request</a> <span
                 className={"right-arrow"}><FaAngleRight color={'#ffffff'}/></span>
             </div>
         </div>

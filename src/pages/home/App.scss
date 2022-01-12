@@ -55,7 +55,9 @@
       justify-content: center;
 
       .head-img {
+        object-fit: cover;
         width: 22vw;
+        height: 22vw;
         margin-top: 8rem !important;
         border-radius: 100%;
         -moz-border-radius: 50%;
@@ -67,7 +69,9 @@
         0 0 2pt 4pt rgba(255, 255, 255, 0.6);
 
         @media (min-width: 320px) and (max-width: 480px) {
-          width: 50vw;
+          margin-top: 0 !important;
+          width: 60vw;
+          height: 60vw;
         }
 
         @media (min-width: 481px) and (max-width: 767px) {
@@ -87,7 +91,7 @@
         font-weight: 700;
 
         @media (min-width: 320px) and (max-width: 480px) {
-         font-size: 8vw;
+          font-size: 8vw;
         }
 
         @media (min-width: 481px) and (max-width: 767px) {
@@ -144,7 +148,7 @@
 
     .second-info {
       right: 30vw;
-      top:30vw;
+      top: 30vw;
     }
 
     .third-info {
@@ -160,7 +164,7 @@
     align-items: center;
     justify-content: center;
 
-    .about-in{
+    .about-in {
 
     }
 
@@ -168,7 +172,7 @@
       text-align: center;
       padding-top: 70px;
       @media (min-width: 320px) and (max-width: 480px) {
-       padding-top: 20px;
+        padding-top: 20px;
       }
 
       @media (min-width: 481px) and (max-width: 767px) {
@@ -257,7 +261,7 @@
       justify-content: space-between;
 
       @media (min-width: 320px) and (max-width: 480px) {
-       padding: 10px;
+        padding: 10px;
       }
 
       @media (min-width: 481px) and (max-width: 767px) {
@@ -334,7 +338,7 @@
       }
 
       @media (min-width: 320px) and (max-width: 480px) {
-       display: none;
+        display: none;
       }
 
       @media (min-width: 481px) and (max-width: 767px) {
@@ -343,7 +347,7 @@
 
     }
 
-    .skill-title{
+    .skill-title {
       position: absolute;
       right: 15vw;
       top: 10vw;
@@ -467,7 +471,6 @@
     .email-sec {
       padding-top: 50px;
       font-size: 40px;
-      color: #ffffff;
       font-weight: 200;
 
       @media (min-width: 320px) and (max-width: 480px) {
@@ -477,6 +480,25 @@
       @media (min-width: 481px) and (max-width: 767px) {
         font-size: 29px;
       }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .work-request-container {
+    min-height: 100vh;
+    background-color: #E0D8F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .iFrameSec{
+      height: 90vh;
+      width: 100%;
+      overflow-y: scroll;
     }
   }
 
