@@ -47,7 +47,7 @@ function App() {
                     <div className={"nice-word-sec container"}>
                         <h1 className={"nice-word-title"}>People don't realize that the whole life of one person can be
                             changed with one book.</h1>
-                        <h4 className={"nice-word-subtitle"}>- Malcom X</h4>
+                        <h4 className={"nice-word-subtitle"}>- Malcolm X</h4>
                     </div>
 
                     <div className={"about-sec container"}>
