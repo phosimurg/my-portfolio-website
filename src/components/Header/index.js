@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Header.scss'
 import {FaAngleRight} from 'react-icons/fa';
 import {FaAlignRight} from 'react-icons/fa';
