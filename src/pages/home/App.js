@@ -36,6 +36,7 @@ function App() {
                     <div className={"head-title-container"}>
                         <h1 className={"head-title"}>Software Developer</h1>
                         <h4 className={"head-subtitle"}>Based in Istanbul, Turkey</h4>
+                        <h6 className={"head-subtitle"} style={{fontSize: '16px',fontStyle:'italic'}}>"Veritas Lux Mea"</h6>
                     </div>
                 </div>
 
