@@ -35,7 +35,7 @@ function App() {
                     </div>
                     <div className={"head-title-container"}>
                         <h1 className={"head-title"}>Software Developer</h1>
-                        <h4 className={"head-subtitle"}>Based in Istanbul, Turkey</h4>
+                        <h4 className={"head-subtitle"}>Based in Istanbul, Turkey</h4>yarn
                         <h6 className={"head-subtitle"} style={{fontSize: '16px',fontStyle:'italic'}}>"Veritas Lux Mea"</h6>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ function App() {
                     <div className={"social-links container"}>
                         <a href="https://www.instagram.com/phosimurg/" className="insta-link"><FaInstagram
                             className={'soc-icon ins-ico'}/></a>
-                        <a href="https://www.linkedin.com/in/ahmet-yildiz-ab5824183/" className="in-link"><FaLinkedinIn
+                        <a href="https://www.linkedin.com/in/phosimurg/" className="in-link"><FaLinkedinIn
                             className={'soc-icon in-ico'}/></a>
                         <a href="https://github.com/phosimurg" className="git-link"><FaGithub
                             className={'soc-icon git-ico'}/></a>
