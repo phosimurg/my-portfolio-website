@@ -31,7 +31,7 @@ function App() {
 
                 <div className={'welcome-in'}>
                     <div className={"head-img-container container-fluid"}>
-                        <img src="/assets/my-photo-new-second.jpg" className={"img-fluid head-img"} alt="my-photo"/>
+                        <img src="/assets/my-photo-black.jpg" className={"img-fluid head-img"} alt="my-photo"/>
                     </div>
                     <div className={"head-title-container"}>
                         <h1 className={"head-title"}>Software Developer</h1>
