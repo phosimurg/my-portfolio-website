@@ -70,24 +70,23 @@ function App() {
                 <div className={"card-sec container"}>
 
                     <div className={"frontend-card col"}>
-                        <DescCard title={'Frontend'} subtitle={'Html, Css, Sass, Bootstrap, Js, React.js'}/>
+                        <DescCard title={'Frontend'} subtitle={'Vanilla.js, React.js, Next.js'}/>
                     </div>
 
                     <div className={"backend-card col"}>
                         <DescCard title={'Backend'} titleColor={'yellow'}
-                                  subtitle={'Php, Laravel, Mysql, MsSql, Asp.Net, Next.js'}/>
+                                  subtitle={'Php, Laravel, Node.js'}/>
                     </div>
 
                     <div className={"software-card col"}>
                         <DescCard title={'Software Development'} titleColor={'blue'}
-                                  subtitle={'C#, Selenium, Unity3D, .Net'}/>
+                                  subtitle={'Unity3D, .Net, Three.js, React Native'}/>
                     </div>
 
                     <div className={"other-card col"}>
                         <DescCard title={'Other'} titleColor={'green'}
-                                  subtitle={'Project Management, Mobile Developing, Adobe Tools(PS, XD, AI, AN), Microsoft Tools, Jira etc.'}/>
+                                  subtitle={'Project Management, Agile Tools, Microsoft Tools, Adobe Tools(PS, XD, AI, AN)'}/>
                     </div>
-
                 </div>
                 <div className={"emoji-sec"}>
                     <img className={"emoji-img img-fluid"} src={Soft} alt="soft"/>
